@@ -58,6 +58,20 @@ function validation (data) {
   return true;
 };
 
+function validationLogin (data) {
+  if (!userNames.value) {
+    alert("User name is empty!");
+    data.userNames.focus();
+    return false;
+  }
+  if (!data.password.value) {
+    alert("Pasword is empty!");
+    data.password.focus();
+    return false;
+  }
+
+  return true;
+};
 function getData() {
   let data = [];
 if (localStorage.getItem('users')) {
@@ -66,4 +80,4 @@ if (localStorage.getItem('users')) {
 return data;
 }
 
-export {validation, getData};
+export {validation, getData, validationLogin};

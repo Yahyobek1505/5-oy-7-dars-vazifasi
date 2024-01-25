@@ -12,7 +12,19 @@
 </head>
 <body>
   <div class="container ">
-        <h1>Hello</h1>
+    <form action="#" class="border p-2 pb-2 mt-5 mb-2 mx-auto w-50 " id="form">
+     <h1 class="text-center fs-4">Login page</h1>
+    <div>
+      <label for="userNames" class="form-label">User name*</label>
+      <input class="form-control" id="userNames" placeholder="Enter user name"rows="3" type="text"></input>
+    </div>
+    <div class="mt-2 mb-2">
+      <label for="inputPassword" class="form-label">Enter password</label>
+      <input class="form-control" id="inputPassword" placeholder="Enter password"rows="3" type="password"></input>
+    </div>
+      <button class="btn btn-success col-2" id="button">Log in</button>
+   </form>
   </div>
+  <script src="./js/registr.js" type="module"></script>
 </body>
 </html>

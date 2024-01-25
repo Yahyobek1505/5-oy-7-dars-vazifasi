@@ -27,5 +27,6 @@ button && button.addEventListener('click', function (event) {
     localStorage.setItem('users', JSON.stringify(data));
     
     window.location.assign(`${urlManzil}login.html`);
+    form.reset();
   } 
 })
