@@ -9,14 +9,21 @@ let urlManzil = window.location.href.substring(0,window.location.href.search("in
 button &&
   button.addEventListener("click", function (event) {
     event.preventDefault();
+
     if (validationLogin({ password, userNames })) {
       let data = getData();
-      let user = data.find((element) => {
-        return element.userNames == userNames.value;
+      let user = data.find((el) => {
+        return el.userNames == userNames.value;
       });
+    
       if (user && user.password == password.value) {
-        window.location.assign(`${urlManzil}result.html`);
+        localStorage.setItem('currentUser', userNames.value)
         form.reset();
+
+        window.location.assign(`${urlManzil}result.html`);
+
+      } else{
+        alert("Login yoki parol no'to'g'ri kiritldi.")
       }
     }
   });

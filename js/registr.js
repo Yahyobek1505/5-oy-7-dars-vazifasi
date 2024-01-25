@@ -19,7 +19,7 @@ button && button.addEventListener('click', function (event) {
       secondName: secondName.value,
       sana: sana.value,
       userNames: userNames.value,
-      email: inputEmail.value,
+      inputEmail: inputEmail.value,
       password: password.value,
     } 
     let data = getData();
