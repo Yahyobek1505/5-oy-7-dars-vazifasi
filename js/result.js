@@ -25,10 +25,10 @@ if (currentUser) {
     inputEmail.innerHTML = user.inputEmail;
     password.innerHTML = user.password;
   } else {
-  // window.location.assign(`${urlManzil}index.html`);
+  window.location.assign(`${urlManzil}index.html`);
   }
 } else {
-  // window.location.assign(`${urlManzil}index.html`);
+  window.location.assign(`${urlManzil}index.html`);
 
 }  
 })
