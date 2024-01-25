@@ -72,6 +72,7 @@ function validationLogin (data) {
 
   return true;
 };
+
 function getData() {
   let data = [];
 if (localStorage.getItem('users')) {
