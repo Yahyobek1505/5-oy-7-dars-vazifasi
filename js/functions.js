@@ -9,17 +9,17 @@ const validateEmail = (email) => {
 
 function validation (data) {
 
-  if (!data.firstname.value) {
+  if (!data.firstName.value) {
     alert("Name is empty!");
-    data.firstname.focus();
+    data.firstName.focus();
     return false;
   }
-  if (data.firstname.value.trim().length < 3) {
+  if (data.firstName.value.length < 3) {
     alert("Name is very short!");
-    data.firstname.focus();
+    data.firstName.focus();
     return false;
   }
-  if (!data.userNames.value) {
+  if (!userNames.value) {
     alert("User name is empty!");
     data.userNames.focus();
     return false;
@@ -39,7 +39,7 @@ function validation (data) {
     data.password.focus();
     return false;
   }
-  if (!data.password.value.length < 4) {
+  if (data.password.value.length < 4) {
     alert("Pasword is very short!");
     data.password.focus();
     return false;
@@ -50,7 +50,7 @@ function validation (data) {
     data.repassword.value ='';
     return false;
   }
-  if (!repassword.value) {
+  if (!data.repassword.value) {
     alert("Repasswor is empty!");
     data.repassword.focus();
     return false;
